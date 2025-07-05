@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - User Profile Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://via.placeholder.com/150x80?text=AUCA+Logo" alt="AUCA University Logo" class="logo">
+            <h1>Create Your Account</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+                <li><a href="profile.php">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="signup-main">
+        <div class="signup-container">
+            <div class="signup-image">
+                <img src="https://via.placeholder.com/400x500?text=Sign+Up+Illustration" alt="Illustration of people signing up for an account">
+            </div>
+            <div class="signup-form">
+                <h2>Join Us Today</h2>
+                <form action="process_signup.php" method="POST" id="signupForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="profile.php">Log in</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-credits">
+                    <a href="#"><h5>Lecturer: Mr. BYIRINGIRO Eric</h5></a>
+                    <a href="https://www.linkedin.com/in/iriza123"><h5>Developed by iriza123</h5></a>
+                </div>
+                <div class="footer-github">
+                    <h3>Check out my GitHub!!</h3>
+                    <div class="github-link">
+                        <i class="fas fa-hand-point-down"></i>
+                        <a href="#" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> Visit GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <span id="current-year"></span> iriza123 - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
