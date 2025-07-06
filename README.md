@@ -1,6 +1,7 @@
 # User Profile Management System
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=Project+Screenshot)
+![Project Screenshot](img/Home.png)
+![Project Screenshot](img/footer.png)
 
 A responsive web application for user registration and profile management, built with HTML5, CSS3, PHP, and MySQL.
 
